@@ -5,6 +5,8 @@ class A:
         self.y = y
     def product(self):
         return (self.x*self.y )  
+    def exponent(self):
+        return (self.x**self.y)    
 
 class B(A): # Child class of Parent A or Subclass of A.
     #Constructor 
@@ -18,10 +20,11 @@ class B(A): # Child class of Parent A or Subclass of A.
     
 
 
-a1 = A(20,30)
+a1 = A(5,2)
 b1 = B(2,3)
-#b1 = B(30, 40)
-# b1 object is a instance of class b
+# b1 object is a instance of class b. It can access its own methods, and methods of A 
 # b1 can use the method of A to get the product of the numbers
 print(f" The sum of {b1.x} and {b1.y} is {b1.sum_up()}") 
-print (f" The product of {b1.x} and {b1.y} is {b1.product()}")      
+print (f" The product of {b1.x} and {b1.y} is {b1.product()}") 
+print(f"{a1.x} to the power of  {a1.y} is {a1.exponent()}")
+print(f"{b1.x} to the power of {b1.y} is {b1.exponent()}")     
