@@ -30,3 +30,6 @@ class Employee:
 emp1 = Employee(name = "Raju", age = 52, title = "Sr Asst", basic = 22500)
 
 emp1.printsalary()
+#class attribute is accissible
+print(emp1.pf_fact) # from the instance
+print(Employee.pf_fact) #from the class
